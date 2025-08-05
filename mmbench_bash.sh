@@ -1,4 +1,0 @@
-HF_ENDPOINT=https://hf-mirror.com python mmbench_eval.py --model llava-1.5 --data_path /home/zhenghh8/hallucination/TVAI/mmbench_dataset/en --use_img_attn --start_img_layer 10 --end_img_layer 30 --alpha 0.5 --use_instruction_attn --start_instruction_layer 5 --end_instruction_layer 20 --beta 0.93 --use_contrast --gamma 1.1
-HF_ENDPOINT=https://hf-mirror.com python mmbench_eval.py --model llava-1.5 --data_path /home/zhenghh8/hallucination/TVAI/mmbench_dataset/cn --use_img_attn --start_img_layer 10 --end_img_layer 30 --alpha 0.5 --use_instruction_attn --start_instruction_layer 5 --end_instruction_layer 20 --beta 0.93 --use_contrast --gamma 1.1
-HF_ENDPOINT=https://hf-mirror.com python mmbench_eval.py --model llava-1.5 --data_path /home/zhenghh8/hallucination/TVAI/mmbench_dataset/en
-HF_ENDPOINT=https://hf-mirror.com python mmbench_eval.py --model llava-1.5 --data_path /home/zhenghh8/hallucination/TVAI/mmbench_dataset/cn
