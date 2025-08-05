@@ -30,7 +30,7 @@ $$ \mathbf{A}^{\prime}_ {l, h}(k,j) = \mathbf{A}_ {l, h}(k,j) + \beta | \mathbf{
 
 <!-- $$ p_{\text{final}} = \gamma \cdot p^{\prime}(y_k | y_{<k}) + (1 - \gamma) \cdot p(y_k | y_{<k}) $$ -->
 
-$$ p_{\text{final}} = \gamma \cdot p^{\prime}(y_k | y_{\less k}) + (1 - \gamma) \cdot p(y_k | y_{\less k}) $$
+$$ p_{\text{final}} = \gamma \cdot p^{\prime}(y_k | y_{\< k}) + (1 - \gamma) \cdot p(y_k | y_{\< k}) $$
 
 <p align="center">
   <img src="asset/tvai_framework.png" alt="TVAI framework" width="88%"/>  <!-- width control -->
