@@ -28,7 +28,7 @@ $$ \mathbf{A}^{\prime}_ {l, h}(k,i) = \mathbf{A}_ {l, h}(k,i) + \alpha | \mathbf
 
 $$ \mathbf{A}^{\prime}_ {l, h}(k,j) = \mathbf{A}_ {l, h}(k,j) + \beta | \mathbf{A}_ {l, h}(k,j) |, j=v_1 \sim v_{n_V} $$  
 
-$$  \gamma \cdot p^ {\prime} (y _ k | y _ {<k}) + (1 - \gamma) \cdot p(y_ k | y_ {<k}) $$
+$$ p_{\text{final}} = \gamma \cdot p^{\prime}(y_k | y_{<k}) + (1 - \gamma) \cdot p(y_k | y_{<k}) $$
 
 <p align="center">
   <img src="asset/tvai_framework.png" alt="TVAI framework" width="88%"/>  <!-- width control -->
