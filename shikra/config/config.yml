@@ -20,4 +20,4 @@ TrainingArgs:
   device: "cuda"
   fsdp: null
 
-load_in_8bit: true
+load_in_8bit: false

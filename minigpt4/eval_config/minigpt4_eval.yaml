@@ -5,7 +5,7 @@ model:
   end_sym: "###"  # '##', '#': [2277, 29937], '###': [835]
   low_resource: True  # load_in_8bit, Flase to load in 32bit (fp32)
   prompt_template: "###Human: {} ###Assistant: "
-  ckpt: "models/minigpt4-vicuna-7b/prerained_minigpt4_7b.pth"
+  ckpt: "/path/to/minigpt4-vicuna-7b/prerained_minigpt4_7b.pth"
 
 datasets:
   cc_sbu_align:
