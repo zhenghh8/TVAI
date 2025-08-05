@@ -24,11 +24,11 @@ Large vision-language models (LVLMs) have demonstrated remarkable multimodal com
 ## 🌻 TVAI Framework
 The TVAI framework adjusts visual-textual token attention weights to balance cross-modal compatibility and align with user intentions, while integrating contrastive decoding to reduce LVLMs’ overreliance on parametric knowledge and synergistically enhance attention manipulation.
 
-$$ \mathbf{A}^{\prime}_ {l, h}(k,i) = \mathbf{A}_ {l, h}(k,i) + \alpha | \mathbf{A}_ {l, h}(k,i) |, i = t_1 \sim t_{n_T} $$
+$$ \mathbf{A}^{\prime}_ {l, h}(k,i) = \mathbf{A}_ {l, h}(k,i) + \alpha | \mathbf{A}_ {l, h}(k,i) |, i = t_1 \sim t_{n_T} $$  
 
-$$ \mathbf{A}^{\prime}_ {l, h}(k,j) = \mathbf{A}_ {l, h}(k,j) + \beta | \mathbf{A}_ {l, h}(k,j) |, j=v_1 \sim v_{n_V} $$
+$$ \mathbf{A}^{\prime}_ {l, h}(k,j) = \mathbf{A}_ {l, h}(k,j) + \beta | \mathbf{A}_ {l, h}(k,j) |, j=v_1 \sim v_{n_V} $$  
 
-
+$$ p_ {final} = \gamma \cdot p^ {\prime} (y _ k | y _ {<k})  $$
 
 <p align="center">
   <img src="asset/tvai_framework.png" alt="TVAI framework" width="88%"/>  <!-- width control -->
