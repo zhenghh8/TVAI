@@ -1,5 +1,5 @@
 ModelArgs:
-  model_name_or_path: "models/shikra-7b-v1-0708-merged"
+  model_name_or_path: "/path/to/shikra-7b-v1-0708-merged"
   type: "shikra"
   cache_dir: null
   freeze_backbone: false

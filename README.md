@@ -14,7 +14,7 @@
 Large vision-language models (LVLMs) have demonstrated remarkable multimodal comprehension and reasoning capabilities, but they still suffer from severe object hallucination. Through an in-depth investigation of the hallucinated mechanisms, we empirically reveal a previously overlooked behavior, termed as modality bias, which indicates that LVLMs struggle to simultaneously attend to both textual and visual modalities, leading to fragmented understanding of user-provided instructions. Based on this observation, we propose a simple yet effective training-free method to mitigate object hallucination. Furthermore, we adopt a contrastive decoding strategy to reduce the LVLM's overreliance on its parametric knowledge, synergistically enhancing our attention manipulation.   
 
 <p align="center">
-  <img src="asset/teaser.png" alt="Teaser" width="66%"/>  <!-- width control -->
+  <img src="asset/teaser.png" alt="Teaser" width="88%"/>  <!-- width control -->
 </p>
 
 <p align="center">Modality bias in LVLMs.</p>  
@@ -25,11 +25,13 @@ Large vision-language models (LVLMs) have demonstrated remarkable multimodal com
 The TVAI framework adjusts visual-textual token attention weights to balance cross-modal compatibility and align with user intentions, while integrating contrastive decoding to reduce LVLMs’ overreliance on parametric knowledge and synergistically enhance attention manipulation.
 
 $$\mathbf{A}^{\prime}_{l, h}(k,i)=\mathbf{A}_{l, h}(k,i) + \alpha |\mathbf{A}_{l, h}(k,i)|, i=t_1 \sim t_{n_T}$$
+
 $$\mathbf{A}^\prime_{l, h}(k,j)=\mathbf{A}_{l, h}(k,j) + \beta |\mathbf{A}_{l, h}(k,j)|, j=v_1 \sim v_{n_V}$$
+
 $$p_{final}=\gamma \cdot p^\prime(y_k|y_{<k}) + (1 - \gamma) \cdot p(y_k|y_{<k})$$
 
 <p align="center">
-  <img src="asset/tvai_framework.png" alt="TVAI framework" width="66%"/>  <!-- width control -->
+  <img src="asset/tvai_framework.png" alt="TVAI framework" width="88%"/>  <!-- width control -->
 </p>
 
 <p align="center">Overview of TVAI.</p>  
@@ -91,7 +93,7 @@ python mmbench_eval.py --ans_file mmbench/llava-1.5/en/mmbench_eval_en_tokens_51
 ## 🎨 Visualization
 
 <p align="center">
-  <img src="asset/visualization.png" alt="Visualization" width="66%"/>  <!-- width control -->
+  <img src="asset/visualization.png" alt="Visualization" width="88%"/>  <!-- width control -->
 </p>
 
 <p align="center">Some cases of LLaVA-1.5 with and without TVAI.</p>
