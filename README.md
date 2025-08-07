@@ -103,8 +103,14 @@ python mmbench_eval.py --ans_file mmbench/llava-1.5/en/mmbench_eval_en_tokens_51
 
 ## 🌈 Citation
 If you find this work useful for your research, please cite [our paper](https://arxiv.org/abs/2508.02419).
-<!-- ```
-``` -->
+```
+@article{zheng2025modality,
+  title={Modality Bias in LVLMs: Analyzing and Mitigating Object Hallucination via Attention Lens},
+  author={Zheng, Haohan and Zhang, Zhenguo},
+  journal={arXiv preprint arXiv:2508.02419},
+  year={2025}
+}
+```
 
 
 ## 💜 Acknowledgement
