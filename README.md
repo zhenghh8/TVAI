@@ -73,7 +73,7 @@ python chair_infe.py --model llava-1.5 --data-path /path/to/coco/val2014 --use_i
 python pope_infe.py --model llava-1.5 --data-path /path/to/coco/val2014 --pope-type adversarial --use_instruction_attn --use_img_attn --use_contrast
 
 # MMBench
-python mmbench_infe.py --model llava-1.5 --data-path /path/to/mmbench_dataset/en --use_img_attn --use_instruction_attn --use_contrast
+python mmbench_infe.py --model llava-1.5 --data-path /path/to/mmbench_dataset/en --use_instruction_attn --use_img_attn --use_contrast
 ```
 
 
@@ -88,7 +88,7 @@ python chair_eval.py --ans_file chair/llava-1.5/chair_eval_tokens_512_instructio
 python pope_eval.py --model llava-1.5 --ans_file pope_coco/llava-1.5/pope_eval_adversarial_tokens_512_instruction_0.93_5_20_img_0.5_10_30_contrast_1.2_penalty_4.jsonl
 
 # MMBench
-python mmbench_eval.py --ans_file mmbench/llava-1.5/en/mmbench_eval_en_tokens_512_img_0.5_10_30_instruction_0.5_5_20_contrast_1.1_penalty_4.jsonl
+python mmbench_eval.py --ans_file mmbench/llava-1.5/en/mmbench_eval_en_tokens_512_instruction_0.5_5_20_img_0.5_10_30_contrast_1.1_penalty_4.jsonl
 ```
 
 
